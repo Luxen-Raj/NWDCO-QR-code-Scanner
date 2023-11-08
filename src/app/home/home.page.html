@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      <img class="logo_img" [src]="'https://nwdco.com/files/images/logo.png'"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+  <div class="stylebtn">
+    <button (click)="startScan()" class='glowing-btn'><span class='glowing-txt'>Scan <span class='faulty-letter'> QR </span> Code</span></button>
+  </div>
+
+
+  <h4 class="scanHeader">Scanned Result: </h4>
+
+  <ion-item class="card" *ngFor="let item of scannedResults;let i = index;">
+    <ion-label>
+      <p class="linktext">{{item.link}}</p>
+      <ion-icon class="removeIcon" name="trash-outline" (click)="removeLink(i)"></ion-icon>
+    </ion-label>
+  </ion-item>
+
+  <ion-label *ngIf="!(scannedResults && scannedResults.length)">
+    <p class="ifNoResult">No Scaned Result Found (:</p>
+  </ion-label>
+  
+  
+</ion-content>

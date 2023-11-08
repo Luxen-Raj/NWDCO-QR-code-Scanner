@@ -1,0 +1,7 @@
+{
+  "name": "NWDCo-Scanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

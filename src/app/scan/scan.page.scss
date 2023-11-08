@@ -1,0 +1,25 @@
+.backBtn {
+    /* display: none; */
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+.textHeader{
+    padding: 5px 20px;
+}
+
+.textContent{
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+
+.qrcode {
+    padding: 30px 0px;
+}
+
+.cameraClass{
+    --background: transparent !important;
+    --ion-background-color: transparent !important;
+}
